@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700;
+  line-height: 22px !important;
+  transform: scaleY(1.8) !important;
+  text-align: center !important;
+}
+
+.custom-radio {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  border: 1px solid #E13737;
+  outline: none;
+  cursor: pointer;
+}
+
+.custom-radio:checked::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #E13737;
+  border-radius: 50%;
+}
